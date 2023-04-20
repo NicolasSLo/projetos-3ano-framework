@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>     
+        calcular()
+        function calcular() 
+        {
+            var pessoas = 0;
+            var qtdRegular = 0;
+            var pessoasBom = 0;
+            var qtd = [];
+            var idadeBom = 0;
+
+            while(pessoas < 10) 
+            {
+            var idade = parseInt(prompt("Idade: " + (pessoas+1)));
+            var opin = prompt("Sua opinião 1- regular | 2- bom | 3- otimo");
+
+                if (opin == 1){
+                    var tipo = "regular";
+                }
+                else if (opin == 2){
+                    var tipo = "bom";
+                    qtdRegular++;
+                }
+                else if (opin == 3){
+                    var tipo = "ótimo";
+                }
+                
+                if (op == 2)
+                {
+                    qtd.push(idade)
+                    idadeBom = idadeBom + idade;
+                    console.log(idadeBom);
+                    pessoasBom++;
+                    console.log(pessoasBom);
+                }
+
+            pessoas++;
+            }
+            var media = parseFloat((idadeBom / pessoasBom).toFixed(3));
+            var porcent = ((pessoasBom/pessoas)*100);
+
+
+            document.write("A média de idade das pessoas que responderam ótimo é: " + media + "<br><br>" );
+            document.write("A quantidade de pessoas que responderam regular é : " + qtdRegular + "<br><br>" );
+            document.write("A porcentagem de pessoas que responderam regular é : " + porcent +"% do total");
+        }
+
+    </script>
+
+</body>
+</html>

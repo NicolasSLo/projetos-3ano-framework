@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var vetor = []
+       var x = 1
+        var sair = 1
+
+            
+        while(sair != 0)
+        {
+            vetor[x] =parseInt(prompt("Digite os numeros: "));
+            sair = prompt("Digite 0 (zero) para sair: ");
+            x++
+        }
+        
+    
+        
+
+        divisivel = vetor.length
+
+        for (i = 0; i<divisivel; i++){
+           if (vetor[i] % 3 == 0 && vetor[i] % 5 == 0){
+               if(vetor[i] > 0){
+                    console.log(`${vetor[i]} É divisível por 5 e 3 ao mesmo tempo`)
+               }
+           }
+        }
+     
+       
+
+    </script>
+</body>
+</html>

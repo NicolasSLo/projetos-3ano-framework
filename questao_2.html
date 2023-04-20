@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        x = 1;
+        somaP = 0;
+        multiI= 1;
+        
+        while(x <= 10)
+        {
+            num = parseInt(prompt("Digite um numero: "));
+        
+            if (num % 2 == 0)
+            {
+                somaP = somaP + num;
+            }
+            else 
+            {
+                multiI = multiI * num;
+            }
+        
+        
+            x++;
+        }
+            console.log("A soma dos numeros pares é: " + somaP);
+            console.log("A multiplicação dos numeros ímpares é: " + multiI);
+            document.writeln(somaP);
+            document.writeln(multiI);
+               
+            </script>
+</body>
+</html>

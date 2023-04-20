@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        salario = 0;
+        aumento = 0;
+        porcentagem = "";
+        novo = 0;
+
+        salario = parseFloat(prompt("Informe o salário: "))
+
+        if (salario <= 1080.00)
+        {
+            novo = (salario * 1.20).toFixed(2);
+            porcentagem = "20%"
+            aumento = (novo - salario).toFixed(2);
+        }
+        else if (salario > 1080.00 && salario < 1700.00)
+        {
+            novo = (salario * 1.15).toFixed(2);
+            porcentagem = "15%"
+            aumento = (novo - salario).toFixed(2);
+        }
+        else if (salario >= 1700.00 && salario < 2500.00)
+        {
+            novo = (salario * 1.10).toFixed(2);
+            porcentagem = "10%"
+            aumento = (novo - salario).toFixed(2);
+        }
+        else 
+        {
+            novo = (salario * 1.05).toFixed(2);
+            porcentagem = "5%"
+            aumento = (novo - salario).toFixed(2);
+        }
+
+
+        document.writeln("<h1>Exercicio 4</h1><br><br>");
+        document.writeln("Salário antes do reajuste:" + salario  + "R$ <br><br>");
+        document.writeln("Porcentual de aumento aplicado: " + porcentagem  + "<br><br>");
+        document.writeln("Valor do aumento: " + aumento  + "R$ <br><br>");
+        document.writeln("Novo salario: " + novo  + "R$");
+    </script>
+</body>
+</html>

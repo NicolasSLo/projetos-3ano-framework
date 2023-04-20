@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vetNum = []; x = 0
+        var par = 0
+        var impar = 0
+
+        while (x<10){
+            vetNum[x]=parseInt(prompt("Digite 10 numeros: "))
+            x++
+        }
+
+        par = vetNum.length
+        for(par in vetNum){
+            if(vetNum[par]%2==0){
+                console.log(`Vetor com número par: ${vetNum[par]}`)
+                vetNum.sort()
+            }
+        }
+
+        impar = vetNum.length
+        for(impar in vetNum){
+            if(vetNum[impar]%2!=0){
+                console.log(`Vetor com número impar: ${vetNum[impar]}`)
+                vetNum.sort()
+            }
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

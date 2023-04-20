@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tamanho (num){
+            var vetNum = []
+            x=0
+            while(x<num){
+                vetNum[x]=parseInt(prompt("Digite os numeros: "))
+                x++
+            }
+            vetNum.sort()
+            console.log(vetNum)
+        }
+        var res = tamanho(parseInt(prompt("Digite o tamanho do array: ")))
+        console.log(res)
+    </script>
+</body>
+</html>
